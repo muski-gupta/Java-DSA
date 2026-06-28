@@ -1,3 +1,4 @@
+//Divide and conquer approach (Kadens Algorightm)
 //optimized code 
 class Solution {
     public int maxSubArray(int[] nums) {
@@ -17,12 +18,6 @@ class Solution {
      return ans;
     }
 }
-
-
-
-
-
-
 
 
 //non optimized code 
