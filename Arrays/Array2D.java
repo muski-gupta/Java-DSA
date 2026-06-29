@@ -31,23 +31,55 @@
 
 
 // print this output 15 9 13 17 18 14 10 6 2 3 7 11 15 19 20 16 12 8 
-import java.util.*;
-public class Array2D{
-//     // make user defined 2D Array
-    public static void main(String [] args){
-int arr[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16},{17,18,19,20}};
+// import java.util.*;
+// public class Array2D{
+// //     // make user defined 2D Array
+//     public static void main(String [] args){
+// int arr[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16},{17,18,19,20}};
 
-    for(int col=0;col<arr[0].length;col++){
-        if(col%2==0){
+//     for(int col=0;col<arr[0].length;col++){
+//         if(col%2==0){
+//          for(int row=0;row<arr.length;row++){
+//             System.out.print(arr[row][col]+ " ");
+//         }
+//         } 
+//         else{ 
+//         for(int row=arr.length-1;row>=0;row--){
+//              System.out.print(arr[row][col] + " ");
+//         }  
+//     } 
+// }
+// }
+// }
+
+
+//transpose of matrix 
+public class Array2D{
+    public static void main(String [] args){
+
+        int arr[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+        Transpose(arr);
          for(int row=0;row<arr.length;row++){
-            System.out.print(arr[row][col]+ " ");
+            for(int col=0;col<arr[0].length;col++){
+               System.out.print(arr[row][col] + " ");
+            }
+            System.out.println();
         }
-        } 
-        else{ 
-        for(int row=arr.length-1;row>=0;row--){
-             System.out.print(arr[row][col] + " ");
-        }  
-    } 
+    }
+       
+
+        public static void Transpose(int arr[][]){
+        for(int row=0;row<arr.length;row++){
+            for(int col=row+1;col<arr.length;col++){
+               int temp=arr[row][col];
+               arr[row][col]=arr[col][row];
+               arr[col][row]=temp;
+            }
+           
+        }
+       
+    }
 }
-}
-}
+
+
+    
