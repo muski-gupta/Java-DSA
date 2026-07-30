@@ -1,5 +1,5 @@
 import java.util.*;
-public class SubarrayProductLessThanK {
+public class SubarrayProductLessThanK713 {
     public static void main(String [] args) {
        int nums[]= {10,5,2,6};
        int k=100;
