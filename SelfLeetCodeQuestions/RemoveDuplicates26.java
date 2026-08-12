@@ -17,19 +17,21 @@ public class RemoveDuplicates26 {
     //  }
     //    System.out.println(i+1);     
     // }
+    // }
 
+ 
 
     //by using arraylist
-public static ArrayList<Integer> Duplicates(int []nums){
-    ArrayList<Integer> list =new ArrayList <>();
-    list.add(nums[0]);
-    for(int i=1;i<nums.length;i++){
-        if(nums[i] != nums[i-1]){
-            list.add(nums[i]);
+// public static ArrayList<Integer> Duplicates(int []nums){
+//     ArrayList<Integer> list =new ArrayList <>();
+//     list.add(nums[0]);
+//     for(int i=1;i<nums.length;i++){
+//         if(nums[i] != nums[i-1]){
+//             list.add(nums[i]);
 
-        }
-    }
-    System.out.println(list);
-    System.out.println(list.size());
-}
-}
+//         }
+//     }
+//     System.out.println(list);
+//     System.out.println(list.size());
+// }
+// }
