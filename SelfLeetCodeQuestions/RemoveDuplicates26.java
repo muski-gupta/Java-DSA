@@ -4,20 +4,20 @@ public class RemoveDuplicates26 {
      int [] nums={1,1,2,2,3,4};
      Duplicates(nums);
     }
-    // public static void Duplicates(int [] nums){
+    public static void Duplicates(int [] nums){
 
     // by using array 
 
-    //  int i=0;
-    //  for(int j=1;j<nums.length;j++){
-    //     if(nums[j]!=nums[i]){
-    //         i++;
-    //         nums[i]=nums[j];
-    //     }
-    //  }
-    //    System.out.println(i+1);     
-    // }
-    // }
+     int i=0;
+     for(int j=1;j<nums.length;j++){
+        if(nums[j]!=nums[i]){
+            i++;
+            nums[i]=nums[j];
+        }
+     }
+       System.out.println(i+1);     
+    }
+    }
 
  
 
