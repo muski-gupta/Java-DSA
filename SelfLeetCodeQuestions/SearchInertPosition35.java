@@ -1,6 +1,6 @@
 public class SearchInertPosition35 {
     public static void main(String [] args){
-      int [] nums={1,3,5,6};
+      int [] nums={1,3,5,};
       int target=4;
       System.out.println(Search(nums,target));
     }
