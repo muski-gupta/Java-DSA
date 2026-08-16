@@ -1,4 +1,4 @@
-package SelfLeetCodeQuestions;
+import java.util.*;
 
 public class Intersection1st349 {
       public static void main(String [] args){
@@ -8,7 +8,7 @@ public class Intersection1st349 {
 
       }
         public static int[] intersection(int[] nums1, int[] nums2) {
-        ArrayList<Integer> ans =new Arraylist <> ();
+        ArrayList<Integer> ans =new ArrayList<> ();
         // List<String> ans = new ArrayList<> ();
         for(int i=0;i<nums1.length;i++){
             for(int j=0;j<nums2.length;j++){
